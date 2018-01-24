@@ -1,0 +1,62 @@
+body {
+	width: 100%;
+	height: 100vh;
+	flex-direction: column;
+	display: flex;
+	justify-content: center;
+	overflow: hidden;
+}
+
+h1 {
+	font-size: 70px;
+	line-height: 130px;	
+	text-align: center;
+}
+
+#plane {
+	position: absolute;
+	left: -202px;
+	top: 100px;
+	height: 100px;
+	width: 200px;
+	animation: plane 8s;
+}
+
+#UFO {
+	position: absolute;
+	right: -101px;
+	top: 100px;
+	height: 100px;
+	width: 100px;
+	animation: UFO 5s;
+}
+
+@keyframes plane {
+	0% {
+		left: -201px;
+	}
+	100% {
+		left: 110%;
+	}
+}
+
+@keyframes UFO {
+	0% {
+		right: -101px;
+	}
+	35% {
+		right: 400px;
+	}
+	42% {
+		top: 200px;
+	}
+	49% {
+		right: 500px;
+	}
+	56% {
+		top: 100px;
+	}
+	100% {
+		right: 110%;
+	}
+}
